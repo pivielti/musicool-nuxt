@@ -1,0 +1,12 @@
+{
+  "name": "musicool-nuxt",
+  "version": "1.0.0",
+  "description": "A simple nuxt project for a simple content website",
+  "scripts": {
+    "dev": "nuxt"
+  },
+  "author": "pivielti",
+  "dependencies": {
+    "nuxt": "^1.0.0-rc11"
+  }
+}

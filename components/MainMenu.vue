@@ -1,0 +1,24 @@
+<template>
+  <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s3">
+                <nuxt-link to="/"  class="w3-button w3-block w3-black">ACCUEIL</nuxt-link>
+            </div>
+            <div class="w3-col s3">
+                <nuxt-link to="/#a-propos"  class="w3-button w3-block w3-black">A PROPOS</nuxt-link>
+            </div>
+            <div class="w3-col s3">
+                <a href="#contact" class="w3-button w3-block w3-black">CONTACT</a>
+            </div>
+            <div class="w3-col s3">
+                <nuxt-link to="/music-truck"  class="new w3-button w3-block w3-black">MUSIC TRUCK</nuxt-link>
+            </div>
+        </div>
+    </div>
+</template>
+
+<style scoped>
+.new {
+    color: #FEF7E7 !important;
+}
+</style>
