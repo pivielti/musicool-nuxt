@@ -23,4 +23,8 @@ html {
   height: 100%;
   font-family: "Inconsolata", sans-serif;
 }
+
+.w3-content {
+  max-width: 700px;
+}
 </style>

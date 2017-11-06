@@ -8,7 +8,7 @@
                 <nuxt-link to="/#a-propos"  class="w3-button w3-block w3-black">A PROPOS</nuxt-link>
             </div>
             <div class="w3-col s3">
-                <a href="#contact" class="w3-button w3-block w3-black">CONTACT</a>
+                <nuxt-link to="/#contact"  class="w3-button w3-block w3-black">CONTACT</nuxt-link>
             </div>
             <div class="w3-col s3">
                 <nuxt-link to="/music-truck"  class="new w3-button w3-block w3-black">MUSIC TRUCK</nuxt-link>
@@ -19,6 +19,6 @@
 
 <style scoped>
 .new {
-    color: #FEF7E7 !important;
+    font-weight: 800;
 }
 </style>

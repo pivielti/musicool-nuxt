@@ -6,15 +6,11 @@
 
     <div class="w3-large">
         <!-- w3-sand w3-grayscale  -->
-        <!-- About Container -->
         <div class="w3-container" id="a-propos">
-            <div class="w3-content" style="max-width:700px">
+            <div class="w3-content">
                 <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">A PROPOS DU MAGASIN</span></h5>
-                <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches,
-                    as well as a selection of sides and salads and other good stuff.</p>
+                <p>Le magasin fut fondé en <b>XXX</b> par Florent Marmai, ... blablabla raconter un peu l'histoire !</p>
+                <p>Blablabla il y a une école Musi'School qui à été créée après par Vanessa ... </p>
                 <div class="w3-panel w3-leftbar w3-light-grey">
                     <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
                     <p>Vanessa Marmai: Gérante de Musicool SPRL</p>
@@ -26,26 +22,13 @@
                 <p><strong>Téléphone :</strong> +32 (0) 64 / 84 77 39</p>
             </div>
         </div>
-
-        <!-- Contact/Area Container -->
         <div class="w3-container" id="contact" style="padding-bottom:32px;">
-            <div class="w3-content" style="max-width:700px">
+            <div class="w3-content">
                 <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Où nous trouver ?</span></h5>
-                <p>Au 75 avenue Wanderpepen à 7130 Binche</p>
-                <div id="googleMap" class="w3-sepia" style="width:100%;height:400px;"></div>
-                <!--<p><span class="w3-tag">INFO:</span> We offer full-service catering for any event, large or small. We understand
-                    your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
-                <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
-                <form action="/action_page.php" target="_blank">
-                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-                    <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required
-                            name="People"></p>
-                    <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required
-                            name="date" value="2017-11-16T20:00"></p>
-                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements"
-                            required name="Message"></p>
-                    <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
-                </form>-->
+                <!-- <p>Au 75 avenue Wanderpepen à 7130 Binche</p> -->
+                <no-ssr>
+                    <musicool-map></musicool-map>
+                </no-ssr>
             </div>
         </div>
     </div>
@@ -54,8 +37,10 @@
 
 <script>
 import PageHeader from "@/components/PageHeader";
+import MusicoolMap from "@/components/MusicoolMap";
+import NoSsr from "vue-no-ssr";
 export default {
-  components: { PageHeader },
+  components: { PageHeader, MusicoolMap, NoSsr },
   asyncData(context) {
     // The most important key, it can be asynchronous and receives the context as argument, please read the async data documentation to learn how it works.
     // https://nuxtjs.org/guide/async-data
@@ -75,7 +60,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "My custom description"
+          content: "Votre magasin d'instruments de musique à Binche"
         }
       ]
     };
