@@ -8,6 +8,16 @@
         </ul>
         <div id="map" style="width:100%;height:400px;"></div>
         <!-- <button @click="logJson">LOG</button> -->
+        <table class="w3-table w3-centered w3-bordered">
+            <tr>
+                <th>Quand ?</th>
+                <th>Ou ?</th>
+            </tr>
+            <tr v-for="(marker, index) in showedMarkers" :key="index">
+                <td>{{ marker.date }}</td>
+                <td>{{ marker.cityName }}</td>
+            </tr>
+        </table>
     </section>
 </template>
 
@@ -217,6 +227,18 @@ export default {
         }
       ]
     };
+  },
+  computed: {
+    showedMarkers() {
+      let markers = [];
+      for (var i = 0; i < this.markers.length; i++) {
+        var marker = this.markers[i];
+        if (marker.getVisible()) {
+          markers.push(marker);
+        }
+      }
+      return markers;
+    }
   },
   methods: {
     initMap() {

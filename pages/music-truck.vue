@@ -30,6 +30,20 @@ export default {
   components: { PageHeader, TruckTabs, MusicTruckMap, NoSsr },
   data() {
     return {};
+  },
+  head() {
+    // Set specific Meta Tags for the current page, see API Pages head documentation.
+    // https://nuxtjs.org/api/pages-head
+    return {
+      title: "Le Music Truck à deux pas de chez vous | Musicool Binche",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Tout le matériel de musique à deux pas de chez vous, une camionnette qui se rend dans toutes les académies de Wallonie chaque mois, tous vos articles préférés (et au prix internet)."
+        }
+      ]
+    };
   }
 };
 </script>

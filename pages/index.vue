@@ -9,12 +9,12 @@
         <div class="w3-container" id="a-propos">
             <div class="w3-content">
                 <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">A PROPOS DU MAGASIN</span></h5>
-                <p>Le magasin fut fondé en <b>XXX</b> par Florent Marmai, ... blablabla raconter un peu l'histoire !</p>
-                <p>Blablabla il y a une école Musi'School qui à été créée après par Vanessa ... </p>
+                <!-- <p>Le magasin fut fondé en <b>XXX</b> par Florent Marmai, ... blablabla raconter un peu l'histoire !</p>
+                <p>Blablabla il y a une école <a href="http://www.musischool.be" target="_blank">Musi'School</a> qui à été créée après par Vanessa ... </p>
                 <div class="w3-panel w3-leftbar w3-light-grey">
-                    <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+                    <p><i>"Avec toute mon équipe, je m'y engage !" Fresh is the new sweet.</i></p>
                     <p>Vanessa Marmai: Gérante de Musicool SPRL</p>
-                </div>
+                </div> -->
                 <img src="~/assets/magasin.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
                 <p><strong>Heures d'ouverture :</strong> de 10h à 18h<br/>Lundi, Mercredi, Jeudi, Vendredi et Samedi.</p>
                 <p><strong>Fermeture :</strong> Mardi et Dimanche.</p>
@@ -60,10 +60,18 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "Votre magasin d'instruments de musique à Binche"
+          content:
+            "Votre magasin d'instruments de musique à Binche | Musicool Binche"
         }
       ]
     };
+  },
+  watch: {
+    router(router) {
+      if (router.to.hash) {
+        console.log(router.to.hash);
+      }
+    }
   }
   // Specify a layout defined in the layouts directory, see API Pages layout documentation.
   // https://nuxtjs.org/api/pages-layout
