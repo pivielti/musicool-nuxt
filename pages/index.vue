@@ -1,7 +1,10 @@
 <template>
   <div>
-    <page-header left="Ouvert de 10h à 18h" right="75 av Wanderpepen, 7130 Binche" img="accueil">
-        Musicool<br>Binche
+    <page-header left="Ouvert de 10h à 18h" right="75 av Wanderpepen, 7130 Binche" color="w3-text-white">
+        <img slot="img" src="~/assets/header.jpg" style="width: 100%;">
+        <span slot="text">
+          Musicool<br>Binche
+        </span>
     </page-header>
 
     <div class="w3-large">
@@ -9,23 +12,31 @@
         <div class="w3-container" id="a-propos">
             <div class="w3-content">
                 <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">A PROPOS DU MAGASIN</span></h5>
-                <!-- <p>Le magasin fut fondé en <b>XXX</b> par Florent Marmai, ... blablabla raconter un peu l'histoire !</p>
-                <p>Blablabla il y a une école <a href="http://www.musischool.be" target="_blank">Musi'School</a> qui à été créée après par Vanessa ... </p>
-                <div class="w3-panel w3-leftbar w3-light-grey">
-                    <p><i>"Avec toute mon équipe, je m'y engage !" Fresh is the new sweet.</i></p>
-                    <p>Vanessa Marmai: Gérante de Musicool SPRL</p>
-                </div> -->
+                <p>
+                  Musicool est le lieu de rencontre de tous les passionnés de musique de la région ! Nous proposons les meilleures marques d'<b>instruments</b> de musique avec tous leurs <b>accessoires</b> ainsi que toutes vos <b>partitions</b> préférées.
+                </p>
+                <p>
+                  Nous proposons également un <b>service de réparations</b> sur place avec plus de 25 ans d'expérience.
+                </p>
+                <p>
+                  Vous aimez la musique et vous souhaitez apprendre à en jouer ? Rendez-vous à <a href="http://www.musischool.be" target="_blank"><b>Musi'School</b></a> ASBL notre école de musique.
+                </p>
                 <img src="~/assets/magasin.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+                <div class="w3-panel w3-leftbar w3-light-grey"> 
+                    <p>
+                      <i>"Musicool ce sont les prix internet avec un service à votre écoute. Notre objectif : vous donner les conseils qui <b>vous</b> conviennent et partager notre passion pour la musique !"</i>
+                    </p>
+                    <p>Vanessa Marmai: Gérante de Musicool SPRL</p>
+                </div>
+            </div>
+        </div>
+        <div class="w3-container" id="contact" style="padding-bottom:72px;">
+            <div class="w3-content">
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTACT</span></h5>
                 <p><strong>Heures d'ouverture :</strong> de 10h à 18h<br/>Lundi, Mercredi, Jeudi, Vendredi et Samedi.</p>
                 <p><strong>Fermeture :</strong> Mardi et Dimanche.</p>
                 <p><strong>Adresse :</strong> 75 av Wanderpepen, 7130 Binche</p>
                 <p><strong>Téléphone :</strong> +32 (0) 64 / 84 77 39</p>
-            </div>
-        </div>
-        <div class="w3-container" id="contact" style="padding-bottom:32px;">
-            <div class="w3-content">
-                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Où nous trouver ?</span></h5>
-                <!-- <p>Au 75 avenue Wanderpepen à 7130 Binche</p> -->
                 <no-ssr>
                     <musicool-map></musicool-map>
                 </no-ssr>
@@ -55,13 +66,12 @@ export default {
     // Set specific Meta Tags for the current page, see API Pages head documentation.
     // https://nuxtjs.org/api/pages-head
     return {
-      title: "Bienvenue à Musicool Binche",
+      title: "Bienvenue | Musicool Binche",
       meta: [
         {
           hid: "description",
           name: "description",
-          content:
-            "Votre magasin d'instruments de musique à Binche | Musicool Binche"
+          content: "Votre magasin d'instruments de musique à Binche"
         }
       ]
     };

@@ -19,6 +19,6 @@
 
 <style scoped>
 .new {
-    font-weight: 800;
+  font-weight: 800;
 }
 </style>

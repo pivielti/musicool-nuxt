@@ -5,7 +5,7 @@
                 <div class="w3-col s6 tablink" :class="{ 'w3-dark-grey': isConceptActive }">Le concept</div>
             </a>
             <a href="#" @click.prevent="activeTab = 'infos'">
-                <div class="w3-col s6 tablink" :class="{ 'w3-dark-grey': isInfoActive }">Comment procéder ?</div>
+                <div class="w3-col s6 tablink" :class="{ 'w3-dark-grey': isInfoActive }">Comment procéder</div>
             </a>
         </div>
         <div class="w3-container menu w3-padding-48 w3-card-2" v-show="isConceptActive">

@@ -35,6 +35,10 @@ module.exports = {
         href: "https://fonts.googleapis.com/css?family=Inconsolata"
       },
       {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/icon?family=Material+Icons"
+      },
+      {
         rel: "icon",
         type: "image/x-icon",
         href: "/favicon.ico"
