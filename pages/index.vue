@@ -1,62 +1,94 @@
 <template>
-  <div>
+  <div itemscope itemtype="http://schema.org/MusicStore">
     <page-header left="Ouvert de 10h à 18h" right="75 av Wanderpepen, 7130 Binche" color="w3-text-white">
-        <img slot="img" src="~/assets/header.jpg" style="width: 100%;">
-        <span slot="text">
-          Musicool<br>Binche
-        </span>
+      <img slot="img" src="~/assets/header.jpg" style="width: 100%;">
+      <span slot="text" itemprop="name">
+        Musicool<br>Binche
+      </span>
     </page-header>
+    <img style="display:none;" src="~/assets/logo.png" itemprop="image">
 
     <div class="w3-large">
-        <!-- w3-sand w3-grayscale  -->
-        <div class="w3-container" id="a-propos">
-            <div class="w3-content">
-                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">A PROPOS DU MAGASIN</span></h5>
-                <p>
-                  Musicool est le lieu de rencontre de tous les passionnés de musique de la région ! Nous proposons les meilleures marques d'<b>instruments</b> de musique avec tous leurs <b>accessoires</b> ainsi que toutes vos <b>partitions</b> préférées.
-                </p>
-                <p>
-                  Nous proposons également un <b>service de réparations</b> sur place avec plus de 25 ans d'expérience.
-                </p>
-                <p>
-                  Vous aimez la musique et vous souhaitez apprendre à en jouer ? Rendez-vous à <a href="http://www.musischool.be" target="_blank"><b>Musi'School</b></a> ASBL notre école de musique.
-                </p>
-                <img src="~/assets/magasin.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
-                <div class="w3-panel w3-leftbar w3-light-grey"> 
-                    <p>
-                      <i>"Musicool ce sont les prix internet avec un service à votre écoute. Notre objectif : vous donner les conseils qui <b>vous</b> conviennent et partager notre passion pour la musique !"</i>
-                    </p>
-                    <p>Vanessa Marmai: Gérante de Musicool SPRL</p>
-                </div>
-            </div>
+      <!-- w3-sand w3-grayscale  -->
+      <div class="w3-container" id="a-propos">
+        <div class="w3-content">
+          <h5 class="w3-center w3-padding-48">
+            <span class="w3-tag w3-wide">A PROPOS DU MAGASIN</span>
+          </h5>
+          <p>
+            Musicool est le lieu de rencontre de tous les passionnés de musique de la région ! Nous proposons les meilleures marques d'
+            <b>instruments</b> de musique avec tous leurs
+            <b>accessoires</b> ainsi que toutes vos
+            <b>partitions</b> préférées.
+          </p>
+          <p>
+            Nous proposons également un
+            <b>service de réparations</b> sur place avec plus de 25 ans d'expérience.
+          </p>
+          <p>
+            Vous aimez la musique et vous souhaitez apprendre à en jouer ? Rendez-vous à
+            <a href="http://www.musischool.be" target="_blank">
+              <b>Musi'School</b>
+            </a>
+            ASBL notre école de musique.
+          </p>
+          <img src="~/assets/magasin.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+          <div class="w3-panel w3-leftbar w3-light-grey">
+            <p>
+              <i>
+                "Musicool ce sont les prix internet avec un service à votre écoute. Notre objectif : vous donner les conseils qui
+                <b>vous</b> conviennent et partager notre passion pour la musique !"
+              </i>
+            </p>
+            <p>Vanessa Marmai: Gérante de Musicool SPRL</p>
+          </div>
         </div>
-        <div class="w3-container" id="contact" style="padding-bottom:72px;">
-            <div class="w3-content">
-                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTACT</span></h5>
-                <p><strong>Heures d'ouverture :</strong> de 10h à 18h<br/>Lundi, Mercredi, Jeudi, Vendredi et Samedi.</p>
-                <p><strong>Fermeture :</strong> Mardi et Dimanche.</p>
-                <p><strong>Adresse :</strong> 75 av Wanderpepen, 7130 Binche</p>
-                <p><strong>Téléphone :</strong> +32 (0) 64 / 84 77 39</p>
-                <no-ssr>
-                    <musicool-map></musicool-map>
-                </no-ssr>
-            </div>
+      </div>
+      <div id="contact" class="w3-container" style="padding-bottom:72px;">
+        <div class="w3-content">
+          <h5 class="w3-center w3-padding-48">
+            <span class="w3-tag w3-wide">CONTACT</span>
+          </h5>
+          <p>
+            <strong>Heures d'ouverture :</strong>
+            <span itemprop="openingHours" content="Mo, We, Th, Fr, Sa 10:00-18:00">de 10h à 18h<br>Lundi, Mercredi, Jeudi, Vendredi et Samedi.</span>
+          </p>
+          <p>
+            <strong>Fermeture :</strong> Mardi et Dimanche.
+          </p>
+          <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <strong>Adresse :</strong>
+            <span itemprop="streetAddress">
+              75 av Wanderpepen
+            </span>,
+            <span itemprop="postalCode">7130</span>
+            <span itemprop="addressLocality">Binche</span>
+          </p>
+          <p>
+            <strong>Téléphone :</strong>&nbsp;
+            <span itemprop="telephone" content="+3264847739">+32 (0) 64 / 84 77 39</span>
+          </p>
+          <no-ssr>
+            <musicool-map/>
+          </no-ssr>
         </div>
+        <div style="display:none;" itemprop="priceRange">€</div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import PageHeader from "@/components/PageHeader";
-import MusicoolMap from "@/components/MusicoolMap";
-import NoSsr from "vue-no-ssr";
+import PageHeader from '@/components/PageHeader';
+import MusicoolMap from '@/components/MusicoolMap';
+import NoSsr from 'vue-no-ssr';
 export default {
   components: { PageHeader, MusicoolMap, NoSsr },
   asyncData(context) {
     // The most important key, it can be asynchronous and receives the context as argument, please read the async data documentation to learn how it works.
     // https://nuxtjs.org/guide/async-data
     // called every time before loading the component
-    return { name: "World" };
+    return { name: 'World' };
   },
   fetch() {
     // Used to fill the store before rendering the page, it's like the data method except it doesn't set the component data. See the API Pages fetch documentation.
@@ -66,11 +98,11 @@ export default {
     // Set specific Meta Tags for the current page, see API Pages head documentation.
     // https://nuxtjs.org/api/pages-head
     return {
-      title: "Bienvenue | Musicool Binche",
+      title: 'Bienvenue | Musicool Binche',
       meta: [
         {
-          hid: "description",
-          name: "description",
+          hid: 'description',
+          name: 'description',
           content: "Votre magasin d'instruments de musique à Binche"
         }
       ]

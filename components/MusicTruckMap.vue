@@ -1,34 +1,36 @@
 <template>
-    <section>
-        <ul class="filter">
-            <li><a href="#" @click.prevent="seeAll">Tout voir</a></li>
-            <li v-for="tour in truckTour" :key="tour.date">
-                <a href="#" @click.prevent="filter(tour.date)">{{ tour.date }}</a>
-            </li>
-        </ul>
-        <div :id="id" style="width:100%;height:400px;" class="w3-border-top w3-border-left w3-border-right mc-red"></div>
-        <div class="w3-border  mc-red tour-details">
-          <button class="w3-button w3-block w3-left-align" @click="toggleTable">
-            <i class="material-icons w3-xxlarge" v-if="!showTable">chevron_right</i>
-            <i class="material-icons w3-xxlarge" v-else>expand_more</i>&nbsp;
-            <b>
-              Détail de la tournée affichée
-            </b>
-          </button>
-          <div class="w3-container w3-hide w3-border-top  mc-red" :class="{ 'w3-show': showTable }">
-            <table class="w3-table w3-centered w3-bordered">
-                <tr>
-                    <th>Quand ?</th>
-                    <th>Ou ?</th>
-                </tr>
-                <tr v-for="(marker, index) in showedMarkers" :key="index">
-                    <td>{{ marker.date }}</td>
-                    <td>{{ marker.cityName }}</td>
-                </tr>
-            </table>
-          </div>
-        </div>
-    </section>
+  <section>
+    <ul class="filter">
+      <li>
+        <a href="#" @click.prevent="seeAll">Tout voir</a>
+      </li>
+      <li v-for="tour in truckTour" :key="tour.date">
+        <a href="#" @click.prevent="filter(tour.date)">{{ tour.date }}</a>
+      </li>
+    </ul>
+    <div :id="id" style="width:100%;height:400px;" class="w3-border-top w3-border-left w3-border-right mc-red"></div>
+    <div class="w3-border  mc-red tour-details">
+      <button class="w3-button w3-block w3-left-align" @click="toggleTable">
+        <i class="material-icons w3-xxlarge" v-if="!showTable">chevron_right</i>
+        <i class="material-icons w3-xxlarge" v-else>expand_more</i>&nbsp;
+        <b>
+          Détail de la tournée affichée
+        </b>
+      </button>
+      <div class="w3-container w3-hide w3-border-top  mc-red" :class="{ 'w3-show': showTable }">
+        <table class="w3-table w3-centered w3-bordered">
+          <tr>
+            <th>Quand ?</th>
+            <th>Ou ?</th>
+          </tr>
+          <tr v-for="(marker, index) in showedMarkers" :key="index">
+            <td>{{ marker.date }}</td>
+            <td>{{ marker.cityName }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>

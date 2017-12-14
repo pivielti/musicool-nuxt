@@ -1,6 +1,6 @@
 <template>
-    <section>
-        <!--<p><span class="w3-tag">INFO:</span> We offer full-service catering for any event, large or small. We understand
+        <section>
+                <!--<p><span class="w3-tag">INFO:</span> We offer full-service catering for any event, large or small. We understand
                 your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
             <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
             <form action="/action_page.php" target="_blank">
@@ -13,5 +13,5 @@
                         required name="Message"></p>
                 <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
             </form>-->
-    </section>
+        </section>
 </template>

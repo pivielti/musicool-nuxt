@@ -1,7 +1,7 @@
 <template>
-    <section>
-        <div id="map" style="width:100%;height:400px;"></div>
-    </section>
+  <section>
+    <div id="map" style="width:100%;height:400px;"></div>
+  </section>
 </template>
 
 <script>
@@ -17,7 +17,7 @@ export default {
         center: center,
         zoom: 15,
         scrollwheel: true,
-        draggable: true,
+        draggable: true
         // mapTypeId: google.maps.MapTypeId.ROADMAP
       };
 

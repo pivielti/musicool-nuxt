@@ -1,32 +1,38 @@
 <template>
-    <div>
-        <page-header left="Livraison à partir de 16h" right="A deux pas de chez vous" color="w3-text-black">
-            <img slot="img" src="~/assets/music-truck-banner.png" style="width: 100%;">
-        </page-header>
-        <div class="w3-container">
-            <div class="w3-content">
-                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">C'EST QUOI ?</span></h5>
-                <truck-tabs></truck-tabs>
-                <img src="~/assets/music-truck.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
-            </div>
-        </div>
-        <div class="w3-container" style="padding-bottom:32px;">
-            <div class="w3-content">
-                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">PLANNING NOVEMBRE</span></h5>
-                <no-ssr>
-                    <music-truck-map :truck-tour="truckTourNovember" id="november"></music-truck-map>
-                </no-ssr>
-            </div>
-        </div>
-        <div class="w3-container" style="padding-bottom:32px;">
-            <div class="w3-content">
-                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">PLANNING DÉCEMBRE</span></h5>
-                <no-ssr>
-                    <music-truck-map :truck-tour="truckTourDecember" id="december"></music-truck-map>
-                </no-ssr>
-            </div>
-        </div>
+  <div>
+    <page-header left="Livraison à partir de 16h" right="A deux pas de chez vous" color="w3-text-black">
+      <img slot="img" src="~/assets/music-truck-banner.png" style="width: 100%;">
+    </page-header>
+    <div class="w3-container">
+      <div class="w3-content">
+        <h5 class="w3-center w3-padding-48">
+          <span class="w3-tag w3-wide">C'EST QUOI ?</span>
+        </h5>
+        <truck-tabs />
+        <img src="~/assets/music-truck.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+      </div>
     </div>
+    <div class="w3-container" style="padding-bottom:32px;">
+      <div class="w3-content">
+        <h5 class="w3-center w3-padding-48">
+          <span class="w3-tag w3-wide">PLANNING DÉCEMBRE</span>
+        </h5>
+        <no-ssr>
+          <music-truck-map :truck-tour="truckTourDecember" id="december" />
+        </no-ssr>
+      </div>
+    </div>
+    <div class="w3-container" style="padding-bottom:32px;">
+      <div class="w3-content">
+        <h5 class="w3-center w3-padding-48">
+          <span class="w3-tag w3-wide">PLANNING JANVIER</span>
+        </h5>
+        <no-ssr>
+          <music-truck-map :truck-tour="truckTourJanuary" id="january" />
+        </no-ssr>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -38,9 +44,51 @@ export default {
   components: { PageHeader, TruckTabs, MusicTruckMap, NoSsr },
   data() {
     return {
-      truckTourNovember: [
+      truckTourJanuary: [
         {
-          date: "Lundi 6",
+          date: "Jeudi 4",
+          cities: [
+            {
+              name: "Fleurus",
+              location: { lat: 50.4822605, lng: 4.551186899999948 }
+            },
+            {
+              name: "Tamines",
+              location: { lat: 50.43353, lng: 4.608190000000036 }
+            },
+            {
+              name: "Auvelais",
+              location: { lat: 50.44938, lng: 4.630239999999958 }
+            },
+            {
+              name: "Châtelet",
+              location: { lat: 50.4061, lng: 4.527860000000032 }
+            },
+            {
+              name: "Farciennes",
+              location: { lat: 50.435779, lng: 4.54371 }
+            }
+          ]
+        },
+        {
+          date: "Vendredi 5",
+          cities: [
+            {
+              name: "Erquelinnes",
+              location: { lat: 50.310574, lng: 4.120048 }
+            },
+            {
+              name: "Sivry",
+              location: { lat: 50.1660176, lng: 4.182086000000027 }
+            },
+            {
+              name: "Rance - Chimay",
+              location: { lat: 50.1421122, lng: 4.277757299999962 }
+            }
+          ]
+        },
+        {
+          date: "Lundi 8",
           cities: [
             {
               name: "Fontaine L'Eveque",
@@ -61,57 +109,7 @@ export default {
           ]
         },
         {
-          date: "Jeudi 9",
-          cities: [
-            {
-              name: "Fleurus",
-              location: { lat: 50.4822605, lng: 4.551186899999948 }
-            },
-            {
-              name: "Tamines",
-              location: { lat: 50.43353, lng: 4.608190000000036 }
-            },
-            {
-              name: "Auvelais",
-              location: { lat: 50.44938, lng: 4.630239999999958 }
-            },
-            {
-              name: "Châtelet",
-              location: { lat: 50.4061, lng: 4.527860000000032 }
-            }
-          ]
-        },
-        {
-          date: "Lundi 13",
-          cities: [
-            {
-              name: "Mons",
-              location: { lat: 50.4542408, lng: 3.956658999999945 }
-            },
-            {
-              name: "Baudour",
-              location: { lat: 50.4832756, lng: 3.837739899999974 }
-            },
-            {
-              name: "Saint Ghislain",
-              location: { lat: 50.4491086, lng: 3.818375699999933 }
-            },
-            {
-              name: "Quaregnon",
-              location: { lat: 50.4444145, lng: 3.8646148000000267 }
-            },
-            {
-              name: "Colfontaine",
-              location: { lat: 50.41423, lng: 3.845980000000054 }
-            },
-            {
-              name: "Frameries",
-              location: { lat: 50.41094, lng: 3.8955100000000584 }
-            }
-          ]
-        },
-        {
-          date: "Jeudi 16",
+          date: "Jeudi 11",
           cities: [
             {
               name: "Charleroi",
@@ -144,8 +142,12 @@ export default {
           ]
         },
         {
-          date: "Lundi 20",
+          date: "Vendredi 12",
           cities: [
+            {
+              name: "Erquelinnes",
+              location: { lat: 50.310574, lng: 4.120048 }
+            },
             {
               name: "Sivry",
               location: { lat: 50.1660176, lng: 4.182086000000027 }
@@ -157,7 +159,137 @@ export default {
           ]
         },
         {
-          date: "Jeudi 23",
+          date: "Lundi 15",
+          cities: [
+            {
+              name: "Mons",
+              location: { lat: 50.4542408, lng: 3.956658999999945 }
+            },
+            {
+              name: "Baudour",
+              location: { lat: 50.4832756, lng: 3.837739899999974 }
+            },
+            {
+              name: "Saint Ghislain",
+              location: { lat: 50.4491086, lng: 3.818375699999933 }
+            },
+            {
+              name: "Quaregnon",
+              location: { lat: 50.4444145, lng: 3.8646148000000267 }
+            },
+            {
+              name: "Colfontaine",
+              location: { lat: 50.41423, lng: 3.845980000000054 }
+            },
+            {
+              name: "Frameries",
+              location: { lat: 50.41094, lng: 3.8955100000000584 }
+            }
+          ]
+        },
+        {
+          date: "Jeudi 18",
+          cities: [
+            {
+              name: "Philippeville",
+              location: { lat: 50.178773, lng: 4.582992 }
+            },
+            {
+              name: "Florennes",
+              location: { lat: 50.254529, lng: 4.605256 }
+            },
+            {
+              name: "Mettet",
+              location: { lat: 50.315778, lng: 4.66443 }
+            },
+            {
+              name: "Gerpinnes",
+              location: { lat: 50.334789, lng: 4.528699 }
+            }
+          ]
+        },
+        {
+          date: "Vendredi 19",
+          cities: [
+            {
+              name: "Erquelinnes",
+              location: { lat: 50.310574, lng: 4.120048 }
+            },
+            {
+              name: "Sivry",
+              location: { lat: 50.1660176, lng: 4.182086000000027 }
+            },
+            {
+              name: "Rance - Chimay",
+              location: { lat: 50.1421122, lng: 4.277757299999962 }
+            }
+          ]
+        },
+        {
+          date: "Lundi 22",
+          cities: [
+            {
+              name: "Soignies",
+              location: { lat: 50.57642449999999, lng: 4.070686900000055 }
+            },
+            {
+              name: "Braine le comte",
+              location: { lat: 50.60936, lng: 4.13483999999994 }
+            },
+            {
+              name: "Enghien",
+              location: { lat: 50.6947421, lng: 4.041858199999979 }
+            },
+            {
+              name: "Tubize",
+              location: { lat: 50.69054, lng: 4.202599999999961 }
+            },
+            {
+              name: "Braine L'alleud",
+              location: { lat: 50.6853626, lng: 4.377919700000007 }
+            },
+            {
+              name: "Nivelles",
+              location: { lat: 50.596551, lng: 4.322994 }
+            }
+          ]
+        },
+        {
+          date: "Jeudi 25",
+          cities: [
+            {
+              name: "Gembloux",
+              location: { lat: 50.56515, lng: 4.688430000000039 }
+            },
+            {
+              name: "Eghezee",
+              location: { lat: 50.59265, lng: 4.9036499999999705 }
+            },
+            {
+              name: "Namur",
+              location: { lat: 50.4673883, lng: 4.871985399999971 }
+            }
+          ]
+        },
+        {
+          date: "Vendredi 26",
+          cities: [
+            {
+              name: "Erquelinnes",
+              location: { lat: 50.310574, lng: 4.120048 }
+            },
+            {
+              name: "Sivry",
+              location: { lat: 50.1660176, lng: 4.182086000000027 }
+            },
+            {
+              name: "Rance - Chimay",
+              location: { lat: 50.1421122, lng: 4.277757299999962 }
+            }
+          ]
+        },
+        {
+          date: "Jeudi 30",
           cities: [
             {
               name: "Thuin",
@@ -186,48 +318,6 @@ export default {
             {
               name: "Couillet",
               location: { lat: 50.3914084, lng: 4.458941800000048 }
-            }
-          ]
-        },
-        {
-          date: "Lundi 27",
-          cities: [
-            {
-              name: "Gembloux",
-              location: { lat: 50.56515, lng: 4.688430000000039 }
-            },
-            {
-              name: "Eghezee",
-              location: { lat: 50.59265, lng: 4.9036499999999705 }
-            },
-            {
-              name: "Namur",
-              location: { lat: 50.4673883, lng: 4.871985399999971 }
-            }
-          ]
-        },
-        {
-          date: "Jeudi 30",
-          cities: [
-            {
-              name: "Soignies",
-              location: { lat: 50.57642449999999, lng: 4.070686900000055 }
-            },
-            {
-              name: "Braine le comte",
-              location: { lat: 50.60936, lng: 4.13483999999994 }
-            },
-            {
-              name: "Enghien",
-              location: { lat: 50.6947421, lng: 4.041858199999979 }
-            },
-            {
-              name: "Tubize",
-              location: { lat: 50.69054, lng: 4.202599999999961 }
-            },
-            {
-              name: "Braine L'alleud",
-              location: { lat: 50.6853626, lng: 4.377919700000007 }
             }
           ]
         }

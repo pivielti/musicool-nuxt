@@ -10,7 +10,7 @@
         </div>
         <div class="w3-container menu w3-padding-48 w3-card-2" v-show="isConceptActive">
             <h5>Tout le matériel de musique à deux pas de chez vous</h5>
-            <p class="w3-text-grey">Une  camionnette qui se rend dans toutes les académies de Wallonie chaque mois</p><br>
+            <p class="w3-text-grey">Une camionnette qui se rend dans toutes les académies de Wallonie chaque mois</p><br>
 
             <h5>Du stock "mobile"</h5>
             <p class="w3-text-grey">Tous vos articles préférés (et au prix internet)</p><br>
@@ -23,11 +23,13 @@
         </div>
         <div class="w3-container menu w3-padding-48 w3-card-2" v-show="isInfoActive">
             <h5>Passer commande</h5>
-            <p class="w3-text-grey">Envoyez vos commandes à musicoolflo@gmail.com ou appelez nous au <a href="tel:+3264847739">+32 (0)64 / 84 77 39</a></p><br>
+            <p class="w3-text-grey">Envoyez vos commandes à musicoolflo@gmail.com ou appelez nous au
+                <a href="tel:+3264847739">+32 (0)64 / 84 77 39</a>
+            </p><br>
 
             <h5>Livraison</h5>
             <p class="w3-text-grey">Nous vous contacterons pour vous informer de l'heure de passage (entre 16h et 19h)</p><br>
-            
+
             <h5>Paiement</h5>
             <p class="w3-text-grey">Pour le paiement, soit par virement bancaire, soit en espèces à la livraison</p><br>
         </div>
@@ -38,15 +40,15 @@
 export default {
   data() {
     return {
-      activeTab: "concept"
+      activeTab: 'concept'
     };
   },
   computed: {
     isConceptActive() {
-      return this.activeTab == "concept";
+      return this.activeTab == 'concept';
     },
     isInfoActive() {
-      return this.activeTab == "infos";
+      return this.activeTab == 'infos';
     }
   }
 };

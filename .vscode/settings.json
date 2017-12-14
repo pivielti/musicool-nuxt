@@ -1,6 +1,8 @@
 {
-    "files.exclude": {
-        "**/.nuxt": false,
-        "**/node_modules": true
-    }
+  "files.exclude": {
+    "**/.nuxt": false,
+    "**/node_modules": true
+  },
+  "vetur.validation.template": false,
+  "vetur.format.defaultFormatter.html": "js-beautify-html"
 }
