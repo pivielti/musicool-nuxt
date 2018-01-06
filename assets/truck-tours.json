@@ -1,0 +1,97 @@
+[
+  {
+    "month": "Janvier",
+    "dates": [
+      { "date": "Jeudi 4", "cities": ["Fleurus", "Tamines", "Auvelais", "Châtelet", "Farciennes"] },
+      { "date": "Vendredi 5", "cities": ["Erquelinnes", "Sivry", "Rance - Chimay"] },
+      { "date": "Lundi 8", "cities": ["Fontaine L'Eveque", "Morlanwelz", "La Louvière", "Houdeng"] },
+      {
+        "date": "Jeudi 11",
+        "cities": ["Charleroi", "Courcelles", "Gosselies", "Ransart", "Jumet", "Gilly", "Montignies-sur-sambre"]
+      },
+      { "date": "Vendredi 12", "cities": ["Erquelinnes", "Sivry", "Rance - Chimay"] },
+      { "date": "Lundi 15", "cities": ["Mons", "Baudour", "Saint Ghislain", "Quaregnon", "Colfontaine", "Frameries"] },
+      { "date": "Jeudi 18", "cities": ["Philippeville", "Florennes", "Mettet", "Gerpinnes"] },
+      { "date": "Vendredi 19", "cities": ["Erquelinnes", "Sivry", "Rance - Chimay"] },
+      {
+        "date": "Lundi 22",
+        "cities": ["Soignies", "Braine le comte", "Enghien", "Tubize", "Braine L'alleud", "Nivelles"]
+      },
+      { "date": "Jeudi 25", "cities": ["Gembloux", "Eghezee", "Namur"] },
+      { "date": "Vendredi 26", "cities": ["Erquelinnes", "Sivry", "Rance - Chimay"] },
+      {
+        "date": "Jeudi 30",
+        "cities": [
+          "Thuin",
+          "Marchienne",
+          "Monceau",
+          "Marcinelle",
+          "Mont-sur-Marchienne",
+          "Montignies-le-tilleul",
+          "Couillet"
+        ]
+      }
+    ]
+  },
+  {
+    "month": "Février",
+    "dates": [
+      {
+        "date": "Jeudi 1",
+        "cities": ["Fleurus", "Tamines", "Auvelais", "Châtelet", "Farciennes"]
+      },
+      {
+        "date": "Vendredi 2",
+        "cities": ["Erquelinnes", "Beaumont", "Sivry-Rance"]
+      },
+      {
+        "date": "Lundi 5",
+        "cities": ["Fontaine L'Eveque", "Morlanwelz", "La Louvière", "Houdeng"]
+      },
+      {
+        "date": "Jeudi 8",
+        "cities": ["Gembloux", "Eghezee", "Namur"]
+      },
+      {
+        "date": "Vendredi 9",
+        "cities": ["Erquelinnes", "Beaumont", "Sivry-Rance"]
+      },
+      {
+        "date": "Lundi 12",
+        "cities": ["Charleroi", "Courcelles", "Gosselies", "Ransart", "Jumet", "Gilly", "Montignies-sur-sambre"]
+      },
+      {
+        "date": "Jeudi 15",
+        "cities": ["Philippeville", "Florennes", "Mettet", "Gerpinnes"]
+      },
+      {
+        "date": "Vendredi 16",
+        "cities": ["Erquelinnes", "Beaumont", "Sivry-Rance"]
+      },
+      {
+        "date": "Lundi 19",
+        "cities": ["Mons", "Baudour", "Saint Ghislain", "Quaregnon", "Colfontaine", "Frameries"]
+      },
+      {
+        "date": "Jeudi 22",
+        "cities": [
+          "Thuin",
+          "Marchienne",
+          "Monceau",
+          "Marcinelle",
+          "Mont-sur-Marchienne",
+          "Montignies-le-tilleul",
+          "Couillet"
+        ]
+      },
+      {
+        "date": "Vendredi 23",
+        "cities": ["Erquelinnes", "Beaumont", "Sivry-Rance"]
+      },
+      {
+        "date": "Lundi 26",
+        "cities": ["Soignies", "Braine le comte", "Enghien", "Tubize", "Braine L'alleud", "Nivelles"]
+      }
+    ]
+  }
+]

@@ -11,7 +11,7 @@ module.exports = {
   },
   // This option lets you define the CSS files/modules/libraries you want to set as globals (included in every page).
   // https://nuxtjs.org/api/configuration-css
-  css: ["assets/main.css"],
+  css: ['assets/main.css'],
   // This option lets you define the development or production mode of Nuxt.js
   // https://nuxtjs.org/api/configuration-dev
   // dev: {},
@@ -24,38 +24,35 @@ module.exports = {
   // This option lets you to define all default meta tags for your application.
   // https://nuxtjs.org/api/configuration-head
   head: {
-    meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" }
-    ],
+    meta: [{ charset: 'utf-8' }, { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
     link: [
-      { rel: "stylesheet", href: "https://www.w3schools.com/w3css/4/w3.css" },
+      { rel: 'stylesheet', href: 'https://www.w3schools.com/w3css/4/w3.css' },
       {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Inconsolata"
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Inconsolata'
       },
       {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
       },
       {
-        rel: "icon",
-        type: "image/x-icon",
-        href: "/favicon.ico"
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico'
       }
     ]
   },
   // This option lets you to customize the loading component Nuxt.js loads by default.
   // https://nuxtjs.org/api/configuration-loading
   loading: {
-    color: "#fef7e7"
-  },
+    color: '#fef7e7'
+  }
   // This option lets you add Nuxt modules to your project.
   // https://nuxtjs.org/api/configuration-modules
   // modules: {},
   // This option lets you to define JavaScript plugins to be run before instantiating the root Vue.js Application.
   // https://nuxtjs.org/api/configuration-plugins
-  plugins: [{ src: "~plugins/vue-smooth-scroll", ssr: false }]
+  // plugins: []
   // This option lets you define the workspace of your Nuxt.js Application.
   // https://nuxtjs.org/api/configuration-rootdir
   // rootDir: {},

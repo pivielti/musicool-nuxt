@@ -34,9 +34,9 @@
 </template>
 
 <script>
+import _cities from '../assets/cities.json';
 export default {
   mounted() {
-    this.geocodeAll();
     this.initMap();
   },
   props: {
@@ -53,8 +53,7 @@ export default {
     return {
       showTable: false,
       mapObj: null,
-      markers: [],
-      geocoded: []
+      markers: []
     };
   },
   computed: {
@@ -83,55 +82,27 @@ export default {
         fullscreenControl: false
       };
 
-      this.mapObj = new google.maps.Map(
-        document.getElementById(this.id),
-        mapOptions
-      );
+      this.mapObj = new google.maps.Map(document.getElementById(this.id), mapOptions);
 
       for (var i = 0; i < this.truckTour.length; i++) {
         var tour = this.truckTour[i];
         for (var j = 0; j < tour.cities.length; j++) {
-          var city = tour.cities[j];
+          var cityName = tour.cities[j];
+          var cityLocation = _cities[cityName];
+          if (cityLocation === undefined) {
+            console.error(`Unable to find the city "${cityName}" in the file "cities.json".`);
+            continue;
+          }
           var marker = new google.maps.Marker({
             date: tour.date,
-            cityName: city.name,
+            cityName: cityName,
             map: this.mapObj,
-            position: city.location
+            position: cityLocation
           });
           this.markers.push(marker);
         }
       }
       this.fitBoundsToVisibleMarkers();
-    },
-    geocodeAll() {
-      for (var i = 0; i < this.truckTour.length; i++) {
-        var tour = this.truckTour[i];
-        this.geocodeTour(tour);
-      }
-    },
-    geocodeTour(tour) {
-      for (var j = 0; j < tour.cities.length; j++) {
-        var city = tour.cities[j];
-        if (city.location == null) {
-          this.geocodeSingle(tour, city);
-        }
-      }
-      this.geocoded.push(tour);
-    },
-    geocodeSingle(tour, city) {
-      var geocoder = new google.maps.Geocoder();
-      var cityRequest = { address: city.name + ", Belgique" };
-      geocoder.geocode(cityRequest, (results, status) => {
-        if (status == "OK") {
-          city.location = results[0].geometry.location;
-        } else if (status == "OVER_QUERY_LIMIT") {
-          alert("OVER_QUERY_LIMIT: " + city);
-        } else {
-          alert(
-            "Geocode was not successful for the following reason: " + status
-          );
-        }
-      });
     },
     fitBoundsToVisibleMarkers() {
       var bounds = new google.maps.LatLngBounds();
