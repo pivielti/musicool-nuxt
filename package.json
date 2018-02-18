@@ -10,7 +10,7 @@
   },
   "author": "pivielti",
   "dependencies": {
-    "nuxt": "^1.0.0-rc11",
-    "vue-no-ssr": "^0.2.0"
+    "nuxt": "^1.2.0",
+    "vue-no-ssr": "^0.2.2"
   }
 }
