@@ -1,46 +1,46 @@
 <template>
-    <div itemscope itemtype="http://schema.org/MusicStore">
-        <page-header left="Ouvert de 10h à 18h" right="75 av Wanderpepen, 7130 Binche" color="w3-text-white">
-            <img slot="img" src="~/assets/header.jpg" style="width: 100%;">
-            <span slot="text" itemprop="name">
-                Musicool<br>Binche
-            </span>
-        </page-header>
-        <img style="display:none;" src="~/assets/logo.png" itemprop="image">
+  <div itemscope itemtype="http://schema.org/MusicStore">
+    <page-header left="Ouvert de 10h à 18h" right="75 av Wanderpepen, 7130 Binche" color="w3-text-white">
+      <img slot="img" src="~/assets/header.jpg" style="width: 100%;">
+      <span slot="text" itemprop="name">
+        Musicool<br>Binche
+      </span>
+    </page-header>
+    <img style="display:none;" src="~/assets/logo.png" itemprop="image">
 
-        <div class="w3-large">
-            <div id="contact" class="w3-container" style="padding-bottom:72px;">
-                <div class="w3-content">
-                    <h5 class="w3-center w3-padding-48">
-                        <span class="w3-tag w3-wide">CONTACT</span>
-                    </h5>
-                    <p>
-                        <strong>Heures d'ouverture :</strong>
-                        <span itemprop="openingHours" content="Mo, We, Th, Fr, Sa 10:00-18:00">de 10h à 18h<br>Lundi, Mercredi, Jeudi, Vendredi et Samedi.</span>
-                    </p>
-                    <p>
-                        <strong>Fermeture :</strong> Mardi et Dimanche.
-                    </p>
-                    <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                        <strong>Adresse :</strong>
-                        <span itemprop="streetAddress">
-                            75 av Wanderpepen
-                        </span>,
-                        <span itemprop="postalCode">7130</span>
-                        <span itemprop="addressLocality">Binche</span>
-                    </p>
-                    <p>
-                        <strong>Téléphone :</strong>&nbsp;
-                        <span itemprop="telephone" content="+3264847739">+32 (0) 64 / 84 77 39</span>
-                    </p>
-                    <no-ssr>
-                        <musicool-map/>
-                    </no-ssr>
-                </div>
-                <div style="display:none;" itemprop="priceRange">€</div>
-            </div>
+    <div class="w3-large">
+      <div id="contact" class="w3-container" style="padding-bottom:72px;">
+        <div class="w3-content">
+          <h5 class="w3-center w3-padding-48">
+            <span class="w3-tag w3-wide">CONTACT</span>
+          </h5>
+          <p>
+            <strong>Heures d'ouverture :</strong>
+            <span itemprop="openingHours" content="Mo, We, Th, Fr, Sa 10:00-18:00">de 10h à 18h<br>Lundi, Mercredi, Jeudi, Vendredi et Samedi.</span>
+          </p>
+          <p>
+            <strong>Fermeture :</strong> Mardi et Dimanche.
+          </p>
+          <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <strong>Adresse :</strong>
+            <span itemprop="streetAddress">
+              75 av Wanderpepen
+            </span>,
+            <span itemprop="postalCode">7130</span>
+            <span itemprop="addressLocality">Binche</span>
+          </p>
+          <p>
+            <strong>Téléphone :</strong>&nbsp;
+            <span itemprop="telephone" content="+3264847739">+32 (0) 64 / 84 77 39</span>
+          </p>
+          <no-ssr>
+            <musicool-map/>
+          </no-ssr>
         </div>
+        <div style="display:none;" itemprop="priceRange">€</div>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
