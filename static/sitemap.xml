@@ -3,7 +3,7 @@
     <url>
         <loc>http://www.musicool.be/</loc>
         <lastmod>2018-01-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>yearly</changefreq>
         <priority>1</priority>
     </url>
     <url>
@@ -14,7 +14,7 @@
     </url>
     <url>
         <loc>http://www.musicool.be/music-truck</loc>
-        <lastmod>2018-04-14</lastmod>
+        <lastmod>2018-05-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1</priority>
     </url>
