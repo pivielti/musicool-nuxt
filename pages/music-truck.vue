@@ -12,13 +12,13 @@
         <img src="~/assets/music-truck.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
       </div>
     </div>
-    <div v-for="tour in tours" :key="tour.month" class="w3-container" style="padding-bottom:32px;">
+    <div class="w3-container" style="padding-bottom:32px;">
       <div class="w3-content">
         <h5 class="w3-center w3-padding-48">
-          <span class="w3-tag w3-wide">PLANNING {{ tour.month | toUpper }}</span>
+          <span class="w3-tag w3-wide">VILLES DESSERVIES</span>
         </h5>
         <no-ssr>
-          <music-truck-map :truck-tour="tour.dates" :id="tour.month" />
+          <music-truck-map />
         </no-ssr>
       </div>
     </div>
@@ -30,14 +30,8 @@ import PageHeader from '@/components/PageHeader';
 import TruckTabs from '@/components/TruckTabs';
 import MusicTruckMap from '@/components/MusicTruckMap';
 import NoSsr from 'vue-no-ssr';
-import truckTours from '../assets/truck-tours.json';
 export default {
   components: { PageHeader, TruckTabs, MusicTruckMap, NoSsr },
-  data() {
-    return {
-      tours: truckTours
-    };
-  },
   head() {
     return {
       title: 'Le Music Truck à deux pas de chez vous | Musicool Binche',
@@ -58,7 +52,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-
-</style>

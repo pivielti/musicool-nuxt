@@ -1,190 +1,683 @@
-{
-  "Auvelais": {
+[
+  {
+    "name": "Auvelais",
     "lat": 50.44938,
-    "lng": 4.630239999999958
+    "lng": 4.630239999999958,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 7"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 10"]
+      }
+    ]
   },
-  "Baudour": {
+  {
+    "name": "Baudour",
     "lat": 50.4832756,
-    "lng": 3.837739899999974
+    "lng": 3.837739899999974,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Lundi 10"]
+      },
+      {
+        "month": 10,
+        "days": ["Vendredi 5"]
+      }
+    ]
   },
-  "Beaumont": {
+  {
+    "name": "Beaumont",
     "lat": 50.23474,
-    "lng": 4.242292
+    "lng": 4.242292,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Jeudi 6", "Jeudi 13", "Jeudi 20", "Jeudi 27"]
+      },
+      {
+        "month": 10,
+        "days": ["Jeudi 4", "Jeudi 11", "Jeudi 18", "Jeudi 25"]
+      }
+    ]
   },
-  "Braine L'alleud": {
+  {
+    "name": "Braine L'alleud",
     "lat": 50.6853626,
-    "lng": 4.377919700000007
+    "lng": 4.377919700000007,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 21"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 15"]
+      }
+    ]
   },
-  "Braine le comte": {
+  {
+    "name": "Braine le comte",
     "lat": 50.60936,
-    "lng": 4.13483999999994
+    "lng": 4.13483999999994,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 21"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 15"]
+      }
+    ]
   },
-  "Charleroi": {
+  {
+    "name": "Charleroi",
     "lat": 50.4108095,
-    "lng": 4.444643000000042
+    "lng": 4.444643000000042,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 14"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 8"]
+      }
+    ]
   },
-  "Châtelet": {
+  {
+    "name": "Châtelet",
     "lat": 50.4061,
-    "lng": 4.527860000000032
+    "lng": 4.527860000000032,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 7"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 10"]
+      }
+    ]
   },
-  "Colfontaine": {
+  {
+    "name": "Colfontaine",
     "lat": 50.41423,
-    "lng": 3.845980000000054
+    "lng": 3.845980000000054,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Lundi 10"]
+      },
+      {
+        "month": 10,
+        "days": ["Vendredi 5"]
+      }
+    ]
   },
-  "Couillet": {
+  {
+    "name": "Couillet",
     "lat": 50.3914084,
-    "lng": 4.458941800000048
+    "lng": 4.458941800000048,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 28"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 22"]
+      }
+    ]
   },
-  "Courcelles": {
+  {
+    "name": "Courcelles",
     "lat": 50.46329799999999,
-    "lng": 4.374054800000067
+    "lng": 4.374054800000067,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 14"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 8"]
+      }
+    ]
   },
-  "Eghezee": {
+  {
+    "name": "Eghezee",
     "lat": 50.59265,
-    "lng": 4.9036499999999705
+    "lng": 4.9036499999999705,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Lundi 24"]
+      },
+      {
+        "month": 10,
+        "days": ["Vendredi 19"]
+      }
+    ]
   },
-  "Enghien": {
+  {
+    "name": "Enghien",
     "lat": 50.6947421,
-    "lng": 4.041858199999979
+    "lng": 4.041858199999979,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 21"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 15"]
+      }
+    ]
   },
-  "Erquelinnes": {
+  {
+    "name": "Erquelinnes",
     "lat": 50.310574,
-    "lng": 4.120048
+    "lng": 4.120048,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Jeudi 6", "Jeudi 13", "Jeudi 20", "Jeudi 27"]
+      },
+      {
+        "month": 10,
+        "days": ["Jeudi 4", "Jeudi 11", "Jeudi 18", "Jeudi 25"]
+      }
+    ]
   },
-  "Farciennes": {
+  {
+    "name": "Farciennes",
     "lat": 50.435779,
-    "lng": 4.54371
+    "lng": 4.54371,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 7"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 10"]
+      }
+    ]
   },
-  "Fleurus": {
+  {
+    "name": "Fleurus",
     "lat": 50.4822605,
-    "lng": 4.551186899999948
+    "lng": 4.551186899999948,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 7"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 10"]
+      }
+    ]
   },
-  "Florennes": {
+  {
+    "name": "Florennes",
     "lat": 50.254529,
-    "lng": 4.605256
+    "lng": 4.605256,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Lundi 17"]
+      },
+      {
+        "month": 10,
+        "days": ["Vendredi 12"]
+      }
+    ]
   },
-  "Fontaine L'Eveque": {
+  {
+    "name": "Fontaine L'Eveque",
     "lat": 50.4166,
-    "lng": 4.3251900000000205
+    "lng": 4.3251900000000205,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Lundi 31"]
+      },
+      {
+        "month": 10,
+        "days": ["Vendredi 26"]
+      }
+    ]
   },
-  "Frameries": {
+  {
+    "name": "Frameries",
     "lat": 50.41094,
-    "lng": 3.8955100000000584
+    "lng": 3.8955100000000584,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Lundi 10"]
+      },
+      {
+        "month": 10,
+        "days": ["Vendredi 5"]
+      }
+    ]
   },
-  "Gembloux": {
+  {
+    "name": "Gembloux",
     "lat": 50.56515,
-    "lng": 4.688430000000039
+    "lng": 4.688430000000039,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Lundi 24"]
+      },
+      {
+        "month": 10,
+        "days": ["Vendredi 19"]
+      }
+    ]
   },
-  "Gerpinnes": {
+  {
+    "name": "Gerpinnes",
     "lat": 50.334789,
-    "lng": 4.528699
+    "lng": 4.528699,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Lundi 17"]
+      },
+      {
+        "month": 10,
+        "days": ["Vendredi 12"]
+      }
+    ]
   },
-  "Gilly": {
+  {
+    "name": "Gilly",
     "lat": 50.4254594,
-    "lng": 4.477215099999967
+    "lng": 4.477215099999967,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 14"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 8"]
+      }
+    ]
   },
-  "Gosselies": {
+  {
+    "name": "Gosselies",
     "lat": 50.4687201,
-    "lng": 4.431955900000048
+    "lng": 4.431955900000048,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 14"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 8"]
+      }
+    ]
   },
-  "Houdeng": {
+  {
+    "name": "Houdeng",
     "lat": 50.48815,
-    "lng": 4.1542799999999716
+    "lng": 4.1542799999999716,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Lundi 31"]
+      },
+      {
+        "month": 10,
+        "days": ["Vendredi 26"]
+      }
+    ]
   },
-  "Jumet": {
+  {
+    "name": "Jumet",
     "lat": 50.44272489999999,
-    "lng": 4.437031100000013
+    "lng": 4.437031100000013,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 14"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 8"]
+      }
+    ]
   },
-  "La Louvière": {
+  {
+    "name": "La Louvière",
     "lat": 50.4747995,
-    "lng": 4.183738800000015
+    "lng": 4.183738800000015,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Lundi 31"]
+      },
+      {
+        "month": 10,
+        "days": ["Vendredi 26"]
+      }
+    ]
   },
-  "Marchienne": {
+  {
+    "name": "Marchienne",
     "lat": 50.4055222,
-    "lng": 4.395723500000031
+    "lng": 4.395723500000031,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 28"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 22"]
+      }
+    ]
   },
-  "Marcinelle": {
+  {
+    "name": "Marcinelle",
     "lat": 50.39526900000001,
-    "lng": 4.42765380000003
+    "lng": 4.42765380000003,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 28"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 22"]
+      }
+    ]
   },
-  "Mettet": {
+  {
+    "name": "Mettet",
     "lat": 50.315778,
-    "lng": 4.66443
+    "lng": 4.66443,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Lundi 17"]
+      },
+      {
+        "month": 10,
+        "days": ["Vendredi 12"]
+      }
+    ]
   },
-  "Monceau": {
+  {
+    "name": "Monceau",
     "lat": 50.4166487,
-    "lng": 4.3763589999999795
+    "lng": 4.3763589999999795,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 28"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 22"]
+      }
+    ]
   },
-  "Mons": {
+  {
+    "name": "Mons",
     "lat": 50.4542408,
-    "lng": 3.956658999999945
+    "lng": 3.956658999999945,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Lundi 10"]
+      },
+      {
+        "month": 10,
+        "days": ["Vendredi 5"]
+      }
+    ]
   },
-  "Mont-sur-Marchienne": {
+  {
+    "name": "Mont-sur-Marchienne",
     "lat": 50.3886584,
-    "lng": 4.405457999999953
+    "lng": 4.405457999999953,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 28"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 22"]
+      }
+    ]
   },
-  "Montignies-sur-sambre": {
+  {
+    "name": "Montignies-sur-sambre",
     "lat": 50.4018544,
-    "lng": 4.477780299999949
+    "lng": 4.477780299999949,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 14"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 8"]
+      }
+    ]
   },
-  "Montignies-le-tilleul": {
+  {
+    "name": "Montignies-le-tilleul",
     "lat": 50.3816464,
-    "lng": 4.375530000000026
+    "lng": 4.375530000000026,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 28"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 22"]
+      }
+    ]
   },
-  "Morlanwelz": {
+  {
+    "name": "Morlanwelz",
     "lat": 50.44888,
-    "lng": 4.240260000000035
+    "lng": 4.240260000000035,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Lundi 31"]
+      },
+      {
+        "month": 10,
+        "days": ["Vendredi 26"]
+      }
+    ]
   },
-  "Namur": {
+  {
+    "name": "Namur",
     "lat": 50.4673883,
-    "lng": 4.871985399999971
+    "lng": 4.871985399999971,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Lundi 24"]
+      },
+      {
+        "month": 10,
+        "days": ["Vendredi 19"]
+      }
+    ]
   },
-  "Nivelles": {
+  {
+    "name": "Nivelles",
     "lat": 50.596551,
-    "lng": 4.322994
+    "lng": 4.322994,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 21"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 15"]
+      }
+    ]
   },
-  "Philippeville": {
+  {
+    "name": "Philippeville",
     "lat": 50.178773,
-    "lng": 4.582992
+    "lng": 4.582992,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Lundi 17"]
+      },
+      {
+        "month": 10,
+        "days": ["Vendredi 12"]
+      }
+    ]
   },
-  "Quaregnon": {
+  {
+    "name": "Quaregnon",
     "lat": 50.4444145,
-    "lng": 3.8646148000000267
+    "lng": 3.8646148000000267,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Lundi 10"]
+      },
+      {
+        "month": 10,
+        "days": ["Vendredi 5"]
+      }
+    ]
   },
-  "Rance - Chimay": {
+  {
+    "name": "Rance - Chimay",
     "lat": 50.1421122,
-    "lng": 4.277757299999962
+    "lng": 4.277757299999962,
+    "dates": []
   },
-  "Ransart": {
+  {
+    "name": "Ransart",
     "lat": 50.4617198,
-    "lng": 4.4760082999999895
+    "lng": 4.4760082999999895,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 14"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 8"]
+      }
+    ]
   },
-  "Saint Ghislain": {
+  {
+    "name": "Saint Ghislain",
     "lat": 50.4491086,
-    "lng": 3.818375699999933
+    "lng": 3.818375699999933,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Lundi 10"]
+      },
+      {
+        "month": 10,
+        "days": ["Vendredi 5"]
+      }
+    ]
   },
-  "Sivry": {
-    "lat": 50.1660176,
-    "lng": 4.182086000000027
-  },
-  "Sivry-Rance": {
+  {
+    "name": "Sivry-Rance",
     "lat": 50.167204,
-    "lng": 4.179704
+    "lng": 4.179704,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Jeudi 6", "Jeudi 13", "Jeudi 20", "Jeudi 27"]
+      },
+      {
+        "month": 10,
+        "days": ["Jeudi 4", "Jeudi 11", "Jeudi 18", "Jeudi 25"]
+      }
+    ]
   },
-  "Soignies": {
+  {
+    "name": "Soignies",
     "lat": 50.57642449999999,
-    "lng": 4.070686900000055
+    "lng": 4.070686900000055,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 21"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 15"]
+      }
+    ]
   },
-  "Tamines": {
+  {
+    "name": "Tamines",
     "lat": 50.43353,
-    "lng": 4.608190000000036
+    "lng": 4.608190000000036,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 7"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 10"]
+      }
+    ]
   },
-  "Thuin": {
+  {
+    "name": "Thuin",
     "lat": 50.3407615,
-    "lng": 4.287328500000058
+    "lng": 4.287328500000058,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 28"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 22"]
+      }
+    ]
   },
-  "Tubize": {
+  {
+    "name": "Tubize",
     "lat": 50.69054,
-    "lng": 4.202599999999961
+    "lng": 4.202599999999961,
+    "dates": [
+      {
+        "month": 9,
+        "days": ["Vendredi 21"]
+      },
+      {
+        "month": 10,
+        "days": ["Lundi 15"]
+      }
+    ]
   }
-}
+]

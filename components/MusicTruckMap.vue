@@ -2,30 +2,44 @@
   <section>
     <ul class="filter">
       <li>
-        <a href="#" @click.prevent="seeAll">Tout voir</a>
+        <a href="#" @click.prevent="resetMap">
+          <b>TOUT VOIR</b>
+        </a>
       </li>
-      <li v-for="tour in truckTour" :key="tour.date">
-        <a href="#" @click.prevent="filter(tour.date)">{{ tour.date }}</a>
+      <li v-for="city in cities" :key="city.name">
+        <a href="#" @click.prevent="showCity(city.name)">{{ city.name }}</a>
       </li>
     </ul>
-    <div :id="id" style="width:100%;height:400px;" class="w3-border-top w3-border-left w3-border-right mc-red"></div>
+    <div id="gmap-container" style="width:100%;height:400px;" class="w3-border-top w3-border-left w3-border-right mc-red"></div>
     <div class="w3-border  mc-red tour-details">
       <button class="w3-button w3-block w3-left-align" @click="toggleTable">
         <i class="material-icons w3-xxlarge" v-if="!showTable">chevron_right</i>
         <i class="material-icons w3-xxlarge" v-else>expand_more</i>&nbsp;
         <b>
-          Détail de la tournée affichée
+          Tableau des dates
         </b>
       </button>
       <div class="w3-container w3-hide w3-border-top  mc-red" :class="{ 'w3-show': showTable }">
-        <table class="w3-table w3-centered w3-bordered">
+        <table class="w3-table w3-bordered">
           <tr>
-            <th>Quand ?</th>
             <th>Ou ?</th>
+            <th>Quand ?</th>
           </tr>
-          <tr v-for="(marker, index) in showedMarkers" :key="index">
-            <td>{{ marker.date }}</td>
-            <td>{{ marker.cityName }}</td>
+          <tr v-for="(city) in cities" :key="city.name">
+            <td>
+              <h4>{{ city.name }}</h4>
+            </td>
+            <td :id="`html-${city.name}`">
+              <div v-if="city.dates.length === 0">
+                <p>Aucune date pour l'instant</p>
+              </div>
+              <div v-else v-for="date in city.dates" :key="date.month">
+                <h4>{{ getMonthName(date.month) }}</h4>
+                <p>
+                  <span v-for="day in date.days" :key="day" class="w3-margin-right">{{ day }}</span>
+                </p>
+              </div>
+            </td>
           </tr>
         </table>
       </div>
@@ -39,20 +53,12 @@ export default {
   mounted() {
     this.initMap();
   },
-  props: {
-    truckTour: {
-      type: Array,
-      required: true
-    },
-    id: {
-      type: String,
-      required: true
-    }
-  },
   data() {
     return {
+      cities: _cities,
       showTable: false,
       mapObj: null,
+      infoWindow: null,
       markers: []
     };
   },
@@ -82,29 +88,27 @@ export default {
         fullscreenControl: false
       };
 
-      this.mapObj = new google.maps.Map(document.getElementById(this.id), mapOptions);
+      this.mapObj = new google.maps.Map(document.getElementById('gmap-container'), mapOptions);
+      this.infoWindow = new google.maps.InfoWindow();
 
-      for (var i = 0; i < this.truckTour.length; i++) {
-        var tour = this.truckTour[i];
-        for (var j = 0; j < tour.cities.length; j++) {
-          var cityName = tour.cities[j];
-          var cityLocation = _cities[cityName];
-          if (cityLocation === undefined) {
-            console.error(`Unable to find the city "${cityName}" in the file "cities.json".`);
-            continue;
+      for (var i = 0; i < this.cities.length; i++) {
+        var city = this.cities[i];
+        var marker = new google.maps.Marker({
+          title: city.name,
+          cityName: city.name,
+          dates: city.dates,
+          map: this.mapObj,
+          position: {
+            lat: city.lat,
+            lng: city.lng
           }
-          var marker = new google.maps.Marker({
-            date: tour.date,
-            cityName: cityName,
-            map: this.mapObj,
-            position: cityLocation
-          });
-          this.markers.push(marker);
-        }
+        });
+        this.markers.push(marker);
       }
-      this.fitBoundsToVisibleMarkers();
+
+      this.fitBoundsToMarkers();
     },
-    fitBoundsToVisibleMarkers() {
+    fitBoundsToMarkers() {
       var bounds = new google.maps.LatLngBounds();
       for (var i = 0; i < this.markers.length; i++) {
         var marker = this.markers[i];
@@ -114,23 +118,52 @@ export default {
       }
       this.mapObj.fitBounds(bounds);
     },
-    seeAll() {
+    showCity(cityName) {
       for (var i = 0; i < this.markers.length; i++) {
         var marker = this.markers[i];
-        marker.setVisible(true);
-      }
-      this.fitBoundsToVisibleMarkers();
-    },
-    filter(date) {
-      for (var i = 0; i < this.markers.length; i++) {
-        var marker = this.markers[i];
-        if (marker.date === date) {
-          marker.setVisible(true);
+        if (marker.cityName === cityName) {
+          this.mapObj.setZoom(12);
+          this.mapObj.setCenter(marker.getPosition());
+          this.infoWindow.setContent(document.getElementById(`html-${cityName}`).innerHTML);
+          this.infoWindow.open(this.mapObj, marker);
         } else {
-          marker.setVisible(false);
+          continue;
         }
       }
-      this.fitBoundsToVisibleMarkers();
+    },
+    resetMap() {
+      this.fitBoundsToMarkers();
+      this.infoWindow.close();
+    },
+    getMonthName(monthNumber) {
+      switch (monthNumber) {
+        case 1:
+          return 'Janvier';
+        case 2:
+          return 'Février';
+        case 3:
+          return 'Mars';
+        case 4:
+          return 'Avril';
+        case 5:
+          return 'Mai';
+        case 6:
+          return 'Juin';
+        case 7:
+          return 'Juillet';
+        case 8:
+          return 'Aout';
+        case 9:
+          return 'Septembre';
+        case 10:
+          return 'Octobre';
+        case 11:
+          return 'Novembre';
+        case 12:
+          return 'Décembre';
+        default:
+          return monthNumber;
+      }
     }
   }
 };

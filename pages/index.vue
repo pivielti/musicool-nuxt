@@ -3,7 +3,7 @@
     <page-header left="Ouvert de 10h à 18h" right="75 av Wanderpepen, 7130 Binche" color="w3-text-white">
       <img slot="img" src="~/assets/header.jpg" style="width: 100%;">
       <span slot="text" itemprop="name">
-        Musicool<br>Binche
+        <span style="text-shadow: 0 0 10px black;">Musicool<br>Binche</span>
       </span>
     </page-header>
     <img style="display:none;" src="~/assets/logo.png" itemprop="image">
