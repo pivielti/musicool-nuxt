@@ -11,6 +11,14 @@
       {
         "month": 10,
         "days": ["Lundi 10"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 5"]
+      },
+      {
+        "month": 12,
+        "days": ["Lundi 3"]
       }
     ]
   },
@@ -26,6 +34,14 @@
       {
         "month": 10,
         "days": ["Vendredi 5"]
+      },
+      {
+        "month": 11,
+        "days": ["Vendredi 9"]
+      },
+      {
+        "month": 12,
+        "days": ["Vendredi 7"]
       }
     ]
   },
@@ -41,6 +57,14 @@
       {
         "month": 10,
         "days": ["Jeudi 4", "Jeudi 11", "Jeudi 18", "Jeudi 25"]
+      },
+      {
+        "month": 11,
+        "days": ["Jeudi 1", "Jeudi 8", "Jeudi 15", "Jeudi 22", "Jeudi 29"]
+      },
+      {
+        "month": 12,
+        "days": ["Jeudi 6", "Jeudi 13", "Jeudi 20", "Jeudi 27"]
       }
     ]
   },
@@ -56,6 +80,14 @@
       {
         "month": 10,
         "days": ["Lundi 15"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 19"]
+      },
+      {
+        "month": 12,
+        "days": ["Lundi 17"]
       }
     ]
   },
@@ -71,6 +103,14 @@
       {
         "month": 10,
         "days": ["Lundi 15"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 19"]
+      },
+      {
+        "month": 12,
+        "days": ["Lundi 17"]
       }
     ]
   },
@@ -86,6 +126,14 @@
       {
         "month": 10,
         "days": ["Lundi 8"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 12"]
+      },
+      {
+        "month": 12,
+        "days": ["Lundi 10"]
       }
     ]
   },
@@ -101,6 +149,14 @@
       {
         "month": 10,
         "days": ["Lundi 10"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 5"]
+      },
+      {
+        "month": 12,
+        "days": ["Lundi 3"]
       }
     ]
   },
@@ -116,6 +172,14 @@
       {
         "month": 10,
         "days": ["Vendredi 5"]
+      },
+      {
+        "month": 11,
+        "days": ["Vendredi 9"]
+      },
+      {
+        "month": 12,
+        "days": ["Vendredi 7"]
       }
     ]
   },
@@ -131,6 +195,10 @@
       {
         "month": 10,
         "days": ["Lundi 22"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 26"]
       }
     ]
   },
@@ -146,6 +214,14 @@
       {
         "month": 10,
         "days": ["Lundi 8"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 12"]
+      },
+      {
+        "month": 12,
+        "days": ["Lundi 10"]
       }
     ]
   },
@@ -161,6 +237,14 @@
       {
         "month": 10,
         "days": ["Vendredi 19"]
+      },
+      {
+        "month": 11,
+        "days": ["Vendredi 23"]
+      },
+      {
+        "month": 12,
+        "days": ["Vendredi 21"]
       }
     ]
   },
@@ -176,6 +260,14 @@
       {
         "month": 10,
         "days": ["Lundi 15"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 19"]
+      },
+      {
+        "month": 12,
+        "days": ["Lundi 17"]
       }
     ]
   },
@@ -191,6 +283,14 @@
       {
         "month": 10,
         "days": ["Jeudi 4", "Jeudi 11", "Jeudi 18", "Jeudi 25"]
+      },
+      {
+        "month": 11,
+        "days": ["Jeudi 1", "Jeudi 8", "Jeudi 15", "Jeudi 22", "Jeudi 29"]
+      },
+      {
+        "month": 12,
+        "days": ["Jeudi 6", "Jeudi 13", "Jeudi 20", "Jeudi 27"]
       }
     ]
   },
@@ -206,6 +306,14 @@
       {
         "month": 10,
         "days": ["Lundi 10"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 5"]
+      },
+      {
+        "month": 12,
+        "days": ["Lundi 3"]
       }
     ]
   },
@@ -221,6 +329,14 @@
       {
         "month": 10,
         "days": ["Lundi 10"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 5"]
+      },
+      {
+        "month": 12,
+        "days": ["Lundi 3"]
       }
     ]
   },
@@ -236,6 +352,14 @@
       {
         "month": 10,
         "days": ["Vendredi 12"]
+      },
+      {
+        "month": 11,
+        "days": ["Vendredi 16"]
+      },
+      {
+        "month": 12,
+        "days": ["Vendredi 14"]
       }
     ]
   },
@@ -251,6 +375,10 @@
       {
         "month": 10,
         "days": ["Vendredi 26"]
+      },
+      {
+        "month": 11,
+        "days": ["Vendredi 30"]
       }
     ]
   },
@@ -266,6 +394,14 @@
       {
         "month": 10,
         "days": ["Vendredi 5"]
+      },
+      {
+        "month": 11,
+        "days": ["Vendredi 9"]
+      },
+      {
+        "month": 12,
+        "days": ["Vendredi 7"]
       }
     ]
   },
@@ -281,6 +417,14 @@
       {
         "month": 10,
         "days": ["Vendredi 19"]
+      },
+      {
+        "month": 11,
+        "days": ["Vendredi 23"]
+      },
+      {
+        "month": 12,
+        "days": ["Vendredi 21"]
       }
     ]
   },
@@ -296,6 +440,14 @@
       {
         "month": 10,
         "days": ["Vendredi 12"]
+      },
+      {
+        "month": 11,
+        "days": ["Vendredi 16"]
+      },
+      {
+        "month": 12,
+        "days": ["Vendredi 14"]
       }
     ]
   },
@@ -311,6 +463,14 @@
       {
         "month": 10,
         "days": ["Lundi 8"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 12"]
+      },
+      {
+        "month": 12,
+        "days": ["Lundi 10"]
       }
     ]
   },
@@ -326,6 +486,14 @@
       {
         "month": 10,
         "days": ["Lundi 8"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 12"]
+      },
+      {
+        "month": 12,
+        "days": ["Lundi 10"]
       }
     ]
   },
@@ -341,6 +509,10 @@
       {
         "month": 10,
         "days": ["Vendredi 26"]
+      },
+      {
+        "month": 11,
+        "days": ["Vendredi 30"]
       }
     ]
   },
@@ -356,6 +528,14 @@
       {
         "month": 10,
         "days": ["Lundi 8"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 12"]
+      },
+      {
+        "month": 12,
+        "days": ["Lundi 10"]
       }
     ]
   },
@@ -371,6 +551,10 @@
       {
         "month": 10,
         "days": ["Vendredi 26"]
+      },
+      {
+        "month": 11,
+        "days": ["Vendredi 30"]
       }
     ]
   },
@@ -386,6 +570,10 @@
       {
         "month": 10,
         "days": ["Lundi 22"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 26"]
       }
     ]
   },
@@ -401,6 +589,10 @@
       {
         "month": 10,
         "days": ["Lundi 22"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 26"]
       }
     ]
   },
@@ -416,6 +608,14 @@
       {
         "month": 10,
         "days": ["Vendredi 12"]
+      },
+      {
+        "month": 11,
+        "days": ["Vendredi 16"]
+      },
+      {
+        "month": 12,
+        "days": ["Vendredi 14"]
       }
     ]
   },
@@ -431,6 +631,10 @@
       {
         "month": 10,
         "days": ["Lundi 22"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 26"]
       }
     ]
   },
@@ -446,6 +650,14 @@
       {
         "month": 10,
         "days": ["Vendredi 5"]
+      },
+      {
+        "month": 11,
+        "days": ["Vendredi 9"]
+      },
+      {
+        "month": 12,
+        "days": ["Vendredi 7"]
       }
     ]
   },
@@ -461,6 +673,10 @@
       {
         "month": 10,
         "days": ["Lundi 22"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 26"]
       }
     ]
   },
@@ -476,6 +692,14 @@
       {
         "month": 10,
         "days": ["Lundi 8"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 12"]
+      },
+      {
+        "month": 12,
+        "days": ["Lundi 10"]
       }
     ]
   },
@@ -491,6 +715,10 @@
       {
         "month": 10,
         "days": ["Lundi 22"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 26"]
       }
     ]
   },
@@ -506,6 +734,10 @@
       {
         "month": 10,
         "days": ["Vendredi 26"]
+      },
+      {
+        "month": 11,
+        "days": ["Vendredi 30"]
       }
     ]
   },
@@ -521,6 +753,14 @@
       {
         "month": 10,
         "days": ["Vendredi 19"]
+      },
+      {
+        "month": 11,
+        "days": ["Vendredi 23"]
+      },
+      {
+        "month": 12,
+        "days": ["Vendredi 21"]
       }
     ]
   },
@@ -536,6 +776,14 @@
       {
         "month": 10,
         "days": ["Lundi 15"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 19"]
+      },
+      {
+        "month": 12,
+        "days": ["Lundi 17"]
       }
     ]
   },
@@ -551,6 +799,14 @@
       {
         "month": 10,
         "days": ["Vendredi 12"]
+      },
+      {
+        "month": 11,
+        "days": ["Vendredi 16"]
+      },
+      {
+        "month": 12,
+        "days": ["Vendredi 14"]
       }
     ]
   },
@@ -566,6 +822,14 @@
       {
         "month": 10,
         "days": ["Vendredi 5"]
+      },
+      {
+        "month": 11,
+        "days": ["Vendredi 9"]
+      },
+      {
+        "month": 12,
+        "days": ["Vendredi 7"]
       }
     ]
   },
@@ -587,6 +851,14 @@
       {
         "month": 10,
         "days": ["Lundi 8"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 12"]
+      },
+      {
+        "month": 12,
+        "days": ["Lundi 10"]
       }
     ]
   },
@@ -602,6 +874,14 @@
       {
         "month": 10,
         "days": ["Vendredi 5"]
+      },
+      {
+        "month": 11,
+        "days": ["Vendredi 9"]
+      },
+      {
+        "month": 12,
+        "days": ["Vendredi 7"]
       }
     ]
   },
@@ -617,6 +897,14 @@
       {
         "month": 10,
         "days": ["Jeudi 4", "Jeudi 11", "Jeudi 18", "Jeudi 25"]
+      },
+      {
+        "month": 11,
+        "days": ["Jeudi 1", "Jeudi 8", "Jeudi 15", "Jeudi 22", "Jeudi 29"]
+      },
+      {
+        "month": 12,
+        "days": ["Jeudi 6", "Jeudi 13", "Jeudi 20", "Jeudi 27"]
       }
     ]
   },
@@ -632,6 +920,14 @@
       {
         "month": 10,
         "days": ["Lundi 15"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 19"]
+      },
+      {
+        "month": 12,
+        "days": ["Lundi 17"]
       }
     ]
   },
@@ -647,6 +943,14 @@
       {
         "month": 10,
         "days": ["Lundi 10"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 5"]
+      },
+      {
+        "month": 12,
+        "days": ["Lundi 3"]
       }
     ]
   },
@@ -662,6 +966,10 @@
       {
         "month": 10,
         "days": ["Lundi 22"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 26"]
       }
     ]
   },
@@ -677,6 +985,14 @@
       {
         "month": 10,
         "days": ["Lundi 15"]
+      },
+      {
+        "month": 11,
+        "days": ["Lundi 19"]
+      },
+      {
+        "month": 12,
+        "days": ["Lundi 17"]
       }
     ]
   }

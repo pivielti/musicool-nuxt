@@ -2,12 +2,12 @@
   <section>
     <ul class="filter">
       <li>
-        <a href="#" @click.prevent="resetMap">
-          <b>TOUT VOIR</b>
+        <a href="#" @click.prevent="resetMap" :class="{'active-city': currentCity === null}">
+          TOUT VOIR
         </a>
       </li>
       <li v-for="city in cities" :key="city.name">
-        <a href="#" @click.prevent="showCity(city.name)">{{ city.name }}</a>
+        <a href="#" @click.prevent="showCity(city.name)" :class="{'active-city': currentCity === city.name}">{{ city.name }}</a>
       </li>
     </ul>
     <div id="gmap-container" style="width:100%;height:400px;" class="w3-border-top w3-border-left w3-border-right mc-red"></div>
@@ -30,15 +30,12 @@
               <h4>{{ city.name }}</h4>
             </td>
             <td :id="`html-${city.name}`">
-              <div v-if="city.dates.length === 0">
-                <p>Aucune date pour l'instant</p>
-              </div>
-              <div v-else v-for="date in city.dates" :key="date.month">
-                <h4>{{ getMonthName(date.month) }}</h4>
-                <p>
-                  <span v-for="day in date.days" :key="day" class="w3-margin-right">{{ day }}</span>
-                </p>
-              </div>
+              <p v-if="city.dates.length === 0">Aucune date pour l'instant</p>
+              <p v-else v-for="date in city.dates" :key="date.month">
+                <b>{{ getMonthName(date.month) }}</b>
+                <span>&nbsp;:&nbsp;</span>
+                <span v-for="day in date.days" :key="day" class="w3-margin-right">{{ day }}</span>
+              </p>
             </td>
           </tr>
         </table>
@@ -56,6 +53,7 @@ export default {
   data() {
     return {
       cities: _cities,
+      currentCity: null,
       showTable: false,
       mapObj: null,
       infoWindow: null,
@@ -126,6 +124,8 @@ export default {
           this.mapObj.setCenter(marker.getPosition());
           this.infoWindow.setContent(document.getElementById(`html-${cityName}`).innerHTML);
           this.infoWindow.open(this.mapObj, marker);
+          this.currentCity = cityName;
+          break;
         } else {
           continue;
         }
@@ -134,6 +134,7 @@ export default {
     resetMap() {
       this.fitBoundsToMarkers();
       this.infoWindow.close();
+      this.currentCity = null;
     },
     getMonthName(monthNumber) {
       switch (monthNumber) {
@@ -190,5 +191,8 @@ export default {
 }
 .mc-red {
   border-color: #6a3432 !important;
+}
+.active-city {
+  font-weight: 700;
 }
 </style>
