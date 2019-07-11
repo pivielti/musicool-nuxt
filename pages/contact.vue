@@ -23,10 +23,10 @@
           </p>
           <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
             <strong>Adresse :</strong>
-            <span itemprop="streetAddress">
-              75 av Wanderpepen
-            </span>,
+            <span itemprop="streetAddress">75 av Wanderpepen</span>
+            <span>,&nbsp;</span>
             <span itemprop="postalCode">7130</span>
+            <span>&nbsp;</span>
             <span itemprop="addressLocality">Binche</span>
           </p>
           <p>
